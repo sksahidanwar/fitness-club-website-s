@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+     <body 
+     style="background-image: url(main.jpg);
+     background-repeat: no-repeat;"
+     >
+        
+        <!-- <body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ..."> -->
+    <header class="flex flex-row justify-between p-10 px-14 border-b bg-inherit shadow-lg">
+        <div class="text-2xl font-bold hover:scale-105 cursor-pointer duration-150">ASK fitness club</div>
+        <div class="flex flex-row justify-center space-x-4 text-lg font-semibold class=" hover:scale-105 duration-150">
+            <p class="hover:scale-105 duration-150 cursor-hover">
+                <a href="page1.html">Home</a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="timetable2.html">
+                    Timetable
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="training main.html">
+                    Training
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="nutrition.html">
+                    Nutrition
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="Sample.html">
+                    About
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="index.html">                
+                    Gallery
+                </a>
+            </p>
+        </div>
+    </header>
+
+    <main class="flex justify-center items-center h-screen -mt-10">
+        <a id="button" href="register page1.html" class="font-bold text-4xl bg-gray-300 rounded-xl px-6 py-4 hover:scale-105 duration-200 transform hover:text-gray-900 hover:bg-gray-500">
+                Register Now
+        </a>
+    </main>
+
+</body>
+<script>
+    var pressedButton = document.getElementsByTagName("button")[0];
+    pressedButton.addEventListener("click", function (event) {
+       alert("Coming Soon")
+    })
+ </script>
+</html>

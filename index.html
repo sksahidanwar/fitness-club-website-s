@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="flex flex-row justify-between p-10 px-14 border-b bg-inherit shadow-lg">
+        <div class="text-2xl font-bold hover:scale-105 cursor-pointer duration-150">ASK fitness club</div>
+        <div class="flex flex-row justify-center space-x-4 text-lg font-semibold class=" hover:scale-105 duration-150">
+            <p class="hover:scale-105 duration-150 cursor-hover">
+                <a href="page1.html">Home</a>            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="timetable2.html">
+                    Timetable
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="training main.html">
+                    Training
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="nutrition.html">
+                    Nutrition
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="Sample.html">
+                    About
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="index.html">                
+                    Gallery
+                </a>
+            </p>
+        </div>
+    </header>
+<div class="container">
+    <h1>Image Gallery</h1>
+
+
+    <div class="image-container">
+        <div class="image"><img src="image-1.jpg" alt=""></div>
+        <div class="image"><img src="image-2.jpg" alt=""></div>
+        <div class="image"><img src="image-3.jpg" alt=""></div>
+        <div class="image"><img src="image-4.jpg" alt=""></div>
+        <div class="image"><img src="image-5.jpg" alt=""></div>
+        <div class="image"><img src="image-6.jpg" alt=""></div>
+        <div class="image"><img src="image-7.jpg" alt=""></div>
+        <div class="image"><img src="image-8.jpg" alt=""></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="image-1.jpg" alt="">
+    </div>
+
+</div>
+
+<script>
+
+document.querySelectorAll('.image-container image').forEach(image =>{
+    image.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image image').src = image.getAttribute('src');
+    }
+});
+
+document.querySelector('popup-image span').onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'none';
+}
+
+</script>
+
+</body>
+</html>

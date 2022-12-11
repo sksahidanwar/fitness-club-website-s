@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<style>
+    table {
+        padding-top: 20px;
+        background-color: none;
+        margin-top: 200px;
+        height: 200px;
+
+    }
+
+    body {
+        background-image: url(/fc12.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    td {
+        color: rgb(213, 24, 36);
+    }
+
+    #button {
+        background-color: rgb(190, 22, 22);
+        /* margin-left: 750px; */
+        /* margin-right: 750px; */
+        border-radius: 40%;
+        font-size: 40px;
+
+
+    }
+
+    #submit {
+        background-color: rgb(190, 22, 22);
+        /* margin-left: 750px; */
+        /* margin-right: 750px; */
+        border-radius: 40%;
+        font-size: 40px;
+
+
+    }
+    #sey{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+    #a{
+        color: rgb(18, 17, 17);
+        text-decoration: none;
+    }
+    
+</style>
+
+<body>
+    <header class="flex flex-row justify-between p-10 px-14 border-b bg-[#fcfcfc] opacity-90 shadow-lg">
+        <div class="text-2xl font-bold hover:scale-105 cursor-pointer duration-150">ASK fitness club</div>
+        <div class="flex flex-row justify-center space-x-4 text-lg font-semibold class=" hover:scale-105 duration-150">
+            <p class="hover:scale-105 duration-150 cursor-hover">
+                <a href="page1.html">Home</a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="timetable2.html">
+                    Timetable
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="training main.html">
+                    Training
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="nutrition.html">
+                    Nutrition
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="Sample.html">
+                    About
+                </a>
+            </p>
+            <p class="hover:scale-105 duration-150 cursor-pointer">
+                <a href="index.html">                
+                    Gallery
+                </a>
+            </p>
+        </div>
+    </header>
+    <form action="" method="post" name="register">
+        <center>
+            <table>
+                <tr>
+                    <td><br></td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <font size="9">Email:</font>
+                    </td>
+                    <td><input type="email" name="email" required></input></td>
+                </tr>
+                <tr>
+                    <td>
+                        <font size="9">Name:</font>
+                    </td>
+                    <td><input type="text" name="name" required></input></td>
+                </tr>
+                <tr>
+                    <td>
+                        <font size="9">Mobile:</font>
+                    </td>
+                    <td><input type="text" name="phn" required pattern="[0-9]{10}" /></td>
+                </tr>
+            </table>
+            <div id="sey">
+
+                <div>
+                    <button type="submit" value="Submit" name="b1" id="submit">submit</button>
+
+                </div>
+                <div>
+                    <button id="button">
+                        <a href="page1.html" id="a">
+                            Home
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+        </center>
+    </form>
+</body>
+
+</html>
